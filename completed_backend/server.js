@@ -17,8 +17,3 @@ db.query('SELECT NOW()')
     console.error('Database connection failed:', err);
     process.exit(1);
   });
-
-app.use(cors({
-  origin: '*', // MENGIZINKAN SEMUA ORIGIN (Untuk saat ini)
-  credentials: true
-}));
