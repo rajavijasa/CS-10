@@ -25,8 +25,8 @@ export default function Register() {
     setMessage("");
 
     try {
-      // Sesuaikan URL endpoint ini dengan backend Anda dari Modul 8
-      const res = await fetch("http://localhost:8000/user/register", {
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      const res = await fetch(`${API_URL}/user/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
