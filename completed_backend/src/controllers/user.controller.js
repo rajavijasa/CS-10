@@ -1,6 +1,6 @@
 const UserService = require('../services/user.service');
 const { AppError } = require('../middleware/errorHandler');
-const redis = require("../database/redis");
+// const redis = require("../database/redis"); 
 
 class UserController {
   static async register(req, res, next) {

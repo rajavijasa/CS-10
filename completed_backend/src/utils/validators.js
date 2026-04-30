@@ -12,7 +12,7 @@ const userRegistrationValidation = [
   body('name')
     .trim()
     .notEmpty().withMessage('Name is required')
-    .isLength({ max: 100 }).withMessage('Name must be at most 100 characters'),
+    .isLength({ max: 20 }).withMessage('Name must be at most 20 characters'),
   body('username')
     .trim()
     .notEmpty().withMessage('Username is required')
