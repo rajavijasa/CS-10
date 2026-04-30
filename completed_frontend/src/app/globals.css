@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a, nav button {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav a:hover, nav button:hover {
+    color: #e85a71; 
+}
+
+.hero {
+    background-color: #fadadd; 
+    color: #333;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.btn, nav .btn, .nav-btn {
+    background-color: #e85a71;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn:hover, nav .btn:hover, .nav-btn:hover {
+    background-color: #d14158;
+    color: #fff;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.about {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-content img {
+    max-width: 40%;
+    border-radius: 8px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.products {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.testimonials {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #e85a71;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+    text-align: right;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.socials a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #e85a71;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-to-top button {
+  background-color: #e85a71;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.scroll-to-top button:hover {
+  background-color: #d14158;
+}
